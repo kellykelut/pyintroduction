@@ -1,4 +1,4 @@
-#Variables
+#Variables Practice
 
 
 #String
@@ -11,4 +11,128 @@ len(greeting)
 
 #Number
 a = 10
+
+# type() is the built in function that will give the type of the variable.
+# for example type(greeting) -> str or string
+
+#String
+character = "Jon Snow"
+print(character)
+len(character) // get the length of the word
+print("HELL0", "h")
+
+#Number
+price = 10
+print(price)
+
+#Math Operator
+
+x = 1
+y = 2
+z = 3
+productvalue = ((x*y)**z)/8
+print(productvalue)
+
+#built in function
+int(10.5) -> 10
+round(10.6) -> 11
+int("100") + 100 -> 200
+
+#Sum calculation
+a = 1.0
+b = 2
+sum = int(a + b)
+print(sum)
+
+#Lists
+#list is the variable that hold or store the same data type in the list.
+name = ["putri", "ali", "abu"]
+print(name[2]) -> "abu" // the indexing starts from 0,1,2, ...
+
+mylist = ["well","good", "to", "know", "you"]
+print(mylist)
+
+#List indexing and slicing
+#can access the list from the back starting with -1
+#for example
+print(mylist[-1]) -> "you"
+
+print(mylist[0:2]) // it will print from index 0 until less than 2 -> "well", "good"
+print(mylist[0:] // it will print everything
+print(mylist[-2:-1] // since Python cannot read from right to left so cannot do this -1:-2
+
+#insert the index of character'h' 
+
+nameq = "John"
+print(nameq[2])
+print(nameq[-2])
+
+nameq = "John Smith"
+print(nameq[2:4])
+
+letter = "abc.......xyz" // get the index of "y"
+print(letter[-2])
+
+#there are many funcion we can use to list such as remove(), append(), sort()
+
+name.append("atikah") -> "putri", "ali", "abu", "atikah"
+name.remove("putri") -> "ali", "abu", "atikah"
+
+#remove item using index
+name.pop(1) -> ali", "atikah"
+
+#print("Python is fun"[-3:][-1])
+#We're dealing with two consecutive slicings here. The first one extracts the string 'fun'
+#from string 'Python is fun' while the second extracts string 'n' from string 'fun'.
+
+#append to list. add "ali" to the list
+mylist = ["jack", abu"]
+mylist.append("ali")
+
+#append list to list
+list1 = [1,2,3]
+list2 = [2]
+list2.append(list1[-1])
+
+#Tuple is also like lists but rarely used since its mutable
+
+#dictionary. its  a key pair value key:value
+pins = {"Mike" : 1234,"John":2222}
+print(pins("Mike")) -> 1234
+
+Mapping two lists to a dictionary:
+ keys = ["a", "b", "c"] 
+ values = [1, 2, 3] 
+ mydict = dict(zip(keys, values)) 
+ mydict 
+{'a': 1, 'b': 2, 'c': 3}
+
+#User input 
+#it will suspend the program and waiting the input from the user
+
+
+
+
+
+
+
+ 
+
+
+
+ 
+
+
+
+  
+
+ 
+
+
+
+
+
+
+
+
 
