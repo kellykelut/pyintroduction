@@ -110,6 +110,85 @@ Mapping two lists to a dictionary:
 #User input 
 #it will suspend the program and waiting the input from the user
 
+x = str(input('Enter your name:'))
+print('Hello, ' + x)
+
+Enter your name: "putri"
+Hello, putri
+
+#conditionals if/else
+
+ pins = {"Putri":1234,"JOE":1111,"JACK":2222}
+
+pin = input("please enter your pin number: ")
+
+if pin in pins.values():
+  print("YES")
+  print("what would you like to do today")
+else:
+  print("OPPS")
+  
+Enter your name:"Putri"
+Hello, Putri
+please enter your pin number: 1234
+YES
+what would you like to do today
+
+
+number = input("please enter your number: ")
+
+if number > 100:
+  print("Greater")
+elif number == 100
+  print("Equal")
+else:
+  print("Smaller")
+  
+ #Custom function
+
+ def calculate_age(year):
+ age = 2019 - year
+ return age
+ 
+ number = input("please enter year of your birth: ")
+ age = calculate_age(number)
+ print("Your age is " + str(age))
+ 
+ def calculate_lengthstr(words):
+    return len(words)
+
+word = str(input("please enter a word of your choice: "))
+length = calculate_lengthstr(word)
+print("The length of word is " + str(length))
+
+def calculate_lengthstr(words):
+    return len(words)
+
+word = str(input("please enter a word of your choice: "))
+print("The length of word is " + str(calculate_lengthstr(word)))
+
+#Custom Function with multiple parameter
+#function with default parameter
+
+def converter(original, conversion)
+ return original * conversion
+
+print(converter(10, 0.3048))
+
+def converter(original, conversion = 0.3.048) // the default would not change. so only need to pass one parameter
+ return original * conversion
+ 
+print(converter(10))
+
+
+
+ 
+ 
+ 
+ 
+
+  
+
 
 
 
