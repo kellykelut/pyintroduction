@@ -180,6 +180,87 @@ def converter(original, conversion = 0.3.048) // the default would not change. s
  
 print(converter(10))
 
+#opening file with Python
+"""
+make sure to save the text file in the same folder or directory of the .py file
+that will read the text file
+"""
+
+"""
+def find_in_file(f):
+    myfile = open('sample.txt')
+    content = myfile.read()
+   # print(content)
+    content = content.splitlines()
+    print(content)
+    if f in content:
+            return "There is a fruit"
+    else:
+            return "There is no fruit"
+
+fruit =input("Enter fruit: ")
+print(find_in_file(fruit))
+
+"""
+
+myfile = open("fruits.txt")
+fruits = myfile.read()
+#fruits = fruits.splitlines()
+file.close() # its a good practice to close the file
+print(fruits)
+
+#for loops
+
+a = [1,2,4]
+
+for i in a:
+    sums = i + 10
+    print(sums)
+
+b = "hellodope"
+for i in b:
+    print(i)
+
+#print fruits in the loop
+myfile = open("fruits.txt")
+fruits = myfile.read()
+for i in fruits:
+    print(i)
+
+mylist = [1,3,4,5,6]
+for i in mylist:
+    print(i)
+
+mylist = ["Trickier"]
+for item in mylist:
+    print(item)
+
+#print number greater than 2 in the list
+mylist = [1,3,4,5,6]
+for i in mylist:
+    if i > 2:
+        print(i)
+        
+#print the length of the string fruits
+myfile = open("fruits.txt")
+fruits = myfile.read()
+fruits = fruits.splitlines()
+for i in fruits:
+        print(len(i))
+
+#convert temperature
+temperature = [10,-20,100]
+
+def cel_to_fahr(celcius):
+    fahrenheit = celcius *9/5 + 32
+    return fahrenheit
+
+for celcius in temperature:
+    convert = cel_to_fahr(celcius)
+    print convert
+    #alternative print(cel_to_fahr(celcius))
+
+
 
 
  
